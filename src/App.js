@@ -4,6 +4,7 @@ import AddForm from "./components/AddForm";
 import { useState } from "react";
 import axios from "axios";
 
+//стили для модального окна
 const style = {
   position: "absolute",
   top: "50%",
@@ -21,6 +22,7 @@ const style = {
 function App() {
   const [formVisible, setFormVisible] = useState(false);
   const [openModal, setOpenModal] = useState(false);
+  
   const openModalHandler = () => {
     setOpenModal(true);
   };
